@@ -1,4 +1,4 @@
-const CACHE_NAME = 'project-node-shell-v17';
+const CACHE_NAME = 'project-node-shell-v18';
 
 const STATIC_ASSETS = [
     './',
@@ -9,24 +9,24 @@ const STATIC_ASSETS = [
     './icons/icon-512.png',
     './icons/icon-maskable-192.png',
     './icons/icon-maskable-512.png',
-    './css/style.css?v=9.0',
-    './css/GlassSurface.css?v=9.0',
-    './css/navbar.css?v=9.0',
-    './css/HoloCard.css?v=9.0',
-    './css/Carousel.css?v=9.0',
-    './css/ScrollStack.css?v=9.0',
-    './js/GlassSurface.js?v=9.0',
-    './js/HoloCard.js?v=9.0',
-    './js/stack.js?v=9.0',
-    './js/Carousel.js?v=9.0',
-    './js/ScrollStack.js?v=9.0',
-    './js/theme.js?v=9.0',
-    './js/profile.js?v=9.0',
-    './js/connect.js?v=9.0',
-    './js/notifications.js?v=9.0',
-    './js/communities.js?v=9.0',
-    './js/app.js?v=9.0',
-    './js/pwa.js?v=9.0'
+    './css/style.css?v=9.1',
+    './css/GlassSurface.css?v=9.1',
+    './css/navbar.css?v=9.1',
+    './css/HoloCard.css?v=9.1',
+    './css/Carousel.css?v=9.1',
+    './css/ScrollStack.css?v=9.1',
+    './js/GlassSurface.js?v=9.1',
+    './js/HoloCard.js?v=9.1',
+    './js/stack.js?v=9.1',
+    './js/Carousel.js?v=9.1',
+    './js/ScrollStack.js?v=9.1',
+    './js/theme.js?v=9.1',
+    './js/profile.js?v=9.1',
+    './js/connect.js?v=9.1',
+    './js/notifications.js?v=9.1',
+    './js/communities.js?v=9.1',
+    './js/app.js?v=9.1',
+    './js/pwa.js?v=9.1'
 ];
 
 self.addEventListener('install', event => {

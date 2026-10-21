@@ -57,6 +57,20 @@
                 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=600&q=80',
                 'https://images.unsplash.com/photo-1530541930197-ff16ac917b0e?auto=format&fit=crop&w=600&q=80'
             ]
+        },
+        {
+            id: 'sauna',
+            name: 'Sauna',
+            subtitle: 'Clubhouse, Level 2 (Wellness Suite)',
+            description: 'Traditional cedar wood Finnish dry sauna and aromatic herbal steam room. Features multi-tier bench seating, Himalayan salt brick warm wall, and restorative ambient lighting. Towel service and cold plunge shower adjacent.',
+            stats: '46 people recharged in the sauna today. Sure not to unwind?',
+            activeNow: '7 active right now',
+            images: [
+                'https://images.unsplash.com/photo-1583416750470-965b2707b355?auto=format&fit=crop&w=1200&q=80',
+                'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80',
+                'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80'
+            ]
         }
     ];
 
@@ -108,6 +122,18 @@
             joinedCount: 1,
             note: 'Pacing 50m intervals in the center lane. Great endurance session for swimming enthusiasts.',
             joinedByUser: false
+        },
+        {
+            id: 'inv-5',
+            location: 'Sauna',
+            title: 'Post-Workout Heat Therapy & Cold Plunge',
+            hostName: 'Chloe Bennett',
+            hostUnit: 'Block 3, #05-11',
+            time: 'Today, 7:15 PM',
+            capacity: 4,
+            joinedCount: 2,
+            note: '15-minute infrared cedar sauna rotation followed by restorative cold showers. Relaxing evening unwind.',
+            joinedByUser: false
         }
     ];
 
@@ -130,6 +156,11 @@
         if (stored) {
             try {
                 invitations = JSON.parse(stored);
+                defaultInvitations.forEach(defInv => {
+                    if (!invitations.some(item => item.id === defInv.id)) {
+                        invitations.push(defInv);
+                    }
+                });
             } catch (e) {
                 invitations = defaultInvitations;
             }
@@ -594,5 +625,9 @@
         handleCreateInvitation: handleCreateInvitation
     };
 
-    document.addEventListener('DOMContentLoaded', initCommunities);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCommunities);
+    } else {
+        initCommunities();
+    }
 })();

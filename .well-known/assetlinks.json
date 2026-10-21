@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "dev.pages.protonode",
+    "sha256_cert_fingerprints": ["41:DF:B5:92:28:72:0C:4F:DB:6E:2B:28:C7:D3:F3:FD:02:CF:1D:71:16:F4:20:B5:E0:96:0D:69:1C:46:9A:26"]
+  }
+}]
