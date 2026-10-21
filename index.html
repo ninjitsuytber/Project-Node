@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Project Node">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Language" content="en">
+    <title>Project Node - Residential Community Platform</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Figtree:wght@700;800;900&family=Noto+Sans+Elymaic&display=swap">
+    <link rel="stylesheet" href="css/style.css?v=9.0">
+    <link rel="stylesheet" href="css/GlassSurface.css?v=9.0">
+    <link rel="stylesheet" href="css/navbar.css?v=9.0">
+    <link rel="stylesheet" href="css/HoloCard.css?v=9.0">
+    <link rel="stylesheet" href="css/Carousel.css?v=9.0">
+    <link rel="stylesheet" href="css/ScrollStack.css?v=9.0">
+</head>
+<body class="notranslate" translate="no">
+
+    <div id="app-loading-screen" class="app-launch-screen">
+        <div class="launch-stage-wrapper">
+            <div id="launch-icon-box" class="launch-icon-box">
+                <svg class="launch-icon-svg" viewBox="0 -960 960 960" aria-hidden="true">
+                    <circle class="launch-circle launch-circle-left" cx="280" cy="-680" r="120" />
+                    <circle class="launch-circle launch-circle-right" cx="680" cy="-280" r="120" />
+                    <path class="launch-connector-path" d="M 210,-542 L 134,-415 C 105,-365 130,-285 190,-280 C 225,-277 252,-288 270,-300 L 690,-660 C 708,-672 735,-683 770,-680 C 830,-675 855,-595 826,-545 L 750,-418" />
+                </svg>
+            </div>
+            <div id="launch-app-name" class="launch-app-name">Project Node</div>
+        </div>
+    </div>
+
+    <svg width="0" height="0" style="position: absolute; pointer-events: none;" aria-hidden="true">
+        <defs>
+            <filter id="liquid-gaussian-blur">
+                <feGaussianBlur stdDeviation="20" edgeMode="duplicate" />
+            </filter>
+        </defs>
+    </svg>
+
+    
+    <main class="app-container">
+
+        
+        <div id="view-home" class="app-view active">
+
+            
+            <section class="welcome-hero-section">
+                <div class="welcome-title-row">
+                    <h1 class="welcome-title">Welcome Home, <span id="welcome-username" class="welcome-username-highlight">Alex Rivera</span></h1>
+                    <button id="profile-btn" class="round-profile-btn" title="Resident Profile &amp; Settings" aria-label="Resident Profile &amp; Settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                            <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <section class="home-active-section">
+                <div class="section-headline-bar">
+                    <h3>Active</h3>
+                </div>
+                <div class="home-active-grid">
+                    <div class="smart-stack-wrapper">
+                        <div id="stack-left-pile" class="stack-container" data-pile="left"></div>
+                        <div id="dots-left-pile" class="indicator-container"></div>
+                    </div>
+                    <div class="smart-stack-wrapper">
+                        <div id="stack-right-pile" class="stack-container" data-pile="right"></div>
+                        <div id="dots-right-pile" class="indicator-container"></div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section id="notifications-section">
+                <div class="section-headline-bar">
+                    <h3>Important Notices</h3>
+                    <span id="notif-count-display" class="section-counter-tag">4 Active</span>
+                </div>
+                <div id="notifications-stream" class="notifications-stack">
+                    
+                </div>
+            </section>
+
+        </div>
+
+        <div id="view-communities" class="app-view">
+            <div class="community-location-header">
+                <button id="btn-prev-location" class="location-nav-arrow" aria-label="Previous Location" title="Previous Location">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <div class="location-header-titles">
+                    <h2 id="location-name-display" class="location-headline">Gym</h2>
+                    <p id="location-subtitle-display" class="location-subhead">East Wing, Floor 4</p>
+                </div>
+                <button id="btn-next-location" class="location-nav-arrow" aria-label="Next Location" title="Next Location">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="location-indicator-strip">
+                <div id="location-dots-container" class="location-pills-row"></div>
+            </div>
+
+            <div class="bento-grid-wrapper" id="bento-grid-container">
+                <div class="bento-main-frame" id="bento-main-frame">
+                    <img id="bento-main-img" class="bento-img" src="" alt="Featured space view" />
+                </div>
+                <div class="bento-thumbnails-col" id="bento-thumbnails-col"></div>
+            </div>
+
+            <div class="location-info-card">
+                <div class="location-info-top">
+                    <p id="location-description-display" class="location-desc-text"></p>
+                </div>
+
+                <div class="location-stats-row">
+                    <div class="location-stat-item">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" class="stat-icon">
+                            <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                        </svg>
+                        <p id="location-statistics-display" class="location-stats-text"></p>
+                    </div>
+                    <span id="location-active-badge" class="location-live-badge"></span>
+                </div>
+
+                <div class="location-action-row">
+                    <button id="btn-find-community" class="find-community-cta">
+                        <span>Find Community</span>
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-invitations" class="app-view">
+            <div class="settings-view-header">
+                <button id="btn-back-to-communities" class="back-to-home-btn" aria-label="Back to Communities">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                    <span>Communities</span>
+                </button>
+                <button id="btn-open-create-invitation-nav" class="header-action-pill-btn" type="button" aria-label="Create Invitation">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    <span>Create</span>
+                </button>
+            </div>
+
+            <div class="invitations-container">
+                <h2 class="invitations-centered-title">Community Invitations</h2>
+
+                <div class="section-headline-bar">
+                    <h3 id="invitations-feed-heading">Active Resident Invitations</h3>
+                    <span id="invitations-count-badge" class="section-counter-tag">4 Active</span>
+                </div>
+
+                <div id="invitations-list-container" class="invitations-scroll-stack-box"></div>
+            </div>
+        </div>
+
+        <div id="view-settings" class="app-view">
+            <div class="settings-view-header">
+                <button id="btn-back-to-home" class="back-to-home-btn" aria-label="Back to Home">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                    <span>Home</span>
+                </button>
+                <h2 class="settings-screen-title">Resident Profile</h2>
+                <div style="width: 80px;"></div>
+            </div>
+
+            <div class="settings-columns-layout">
+                
+                <div class="settings-forms-col">
+                    
+                    <div class="settings-card-panel">
+                        <h3>Display Name</h3>
+                        <p class="panel-subtext">Configures how your greeting ("Welcome Home, Username") appears across your dashboard.</p>
+                        
+                        <div class="field-group">
+                            <label class="field-label" for="input-appearance-name">Appearance Name</label>
+                            <input type="text" id="input-appearance-name" class="field-input" placeholder="e.g. Alex Rivera" maxlength="35">
+                        </div>
+                    </div>
+
+                    
+                    <div class="settings-card-panel">
+                        <h3>Sharable Resident Name Card</h3>
+                        <p class="panel-subtext">Name and Phone Number are required to verify your resident contact card. Other fields are optional.</p>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-fullname">Full Name</label>
+                                <span class="required-tag">Required</span>
+                            </div>
+                            <input type="text" id="input-card-fullname" class="field-input" placeholder="e.g. Alex Rivera" required>
+                            <div id="error-card-fullname" class="field-error-notice">Full Name is required.</div>
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-phone">Phone Number</label>
+                                <span class="required-tag">Required</span>
+                            </div>
+                            <input type="tel" id="input-card-phone" class="field-input" placeholder="e.g. +1 (555) 392-8192" required>
+                            <div id="error-card-phone" class="field-error-notice">Phone Number is required.</div>
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-unit">Unit / Block Number</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <input type="text" id="input-card-unit" class="field-input" placeholder="e.g. Block 4, #07-12">
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-occupation">Occupation / Profession</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <input type="text" id="input-card-occupation" class="field-input" placeholder="e.g. Landscape Architect, Engineer">
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-bio">About / Bio</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <textarea id="input-card-bio" class="field-textarea" rows="3" placeholder="A brief note about yourself for neighbors..."></textarea>
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-email">Email Address</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <input type="email" id="input-card-email" class="field-input" placeholder="e.g. alex@example.com">
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label" for="input-card-handle">Messaging / Social Handle</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <input type="text" id="input-card-handle" class="field-input" placeholder="e.g. @alex_node">
+                        </div>
+
+                        
+                        <div class="field-group">
+                            <div class="field-label-row">
+                                <label class="field-label">Available to Help Neighbors With:</label>
+                                <span class="optional-tag">Optional</span>
+                            </div>
+                            <div class="skills-tag-grid">
+                                <button type="button" class="skill-tag-btn" data-tag="Tool Sharing">Tool Sharing</button>
+                                <button type="button" class="skill-tag-btn" data-tag="Plant Care">Plant Care</button>
+                                <button type="button" class="skill-tag-btn" data-tag="Pet Sitting">Pet Sitting</button>
+                                <button type="button" class="skill-tag-btn" data-tag="Carpooling">Carpooling</button>
+                                <button type="button" class="skill-tag-btn" data-tag="Tech Support">Tech Support</button>
+                                <button type="button" class="skill-tag-btn" data-tag="First Aid">First Aid</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="settings-actions-group">
+                        <button type="button" id="btn-preview-namecard" class="pill-preview-namecard-btn">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                            </svg>
+                            <span>Preview Name Card</span>
+                        </button>
+                        <button type="button" id="btn-save-settings" class="card-save-btn">
+                            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                                <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                            </svg>
+                            <span>Save Profile</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-card-preview" class="app-view">
+            <div class="settings-view-header preview-view-header">
+                <button id="btn-back-from-preview" class="back-to-home-btn" aria-label="Exit Preview">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                    <span>Profile</span>
+                </button>
+                <div class="preview-header-title-box">
+                    <h2 class="settings-screen-title preview-centered-title">Card Preview</h2>
+                </div>
+                <div class="header-right-spacer"></div>
+            </div>
+
+            <div class="preview-stage-container">
+                <div class="holocard-stage-wrapper">
+                    <div id="preview-holocard-container"></div>
+                </div>
+
+                <div class="holocard-preset-bar">
+                    <button type="button" class="holocard-preset-chip" data-preset="bursts">Bursts</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="rainbow">Rainbow</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="shards">Shards</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="cosmos">Cosmos</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="stars">Stars</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="swirl">Swirl</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="glitter">Glitter</button>
+                    <button type="button" class="holocard-preset-chip" data-preset="gold">Gold</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-connect" class="app-view">
+            <div class="settings-view-header connect-view-header">
+                <button id="btn-back-to-home-from-connect" class="back-to-home-btn" aria-label="Back to Home">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                    <span>Home</span>
+                </button>
+                <div class="connect-header-title-box">
+                    <h2 class="settings-screen-title connect-centered-title">Connect</h2>
+                </div>
+                <button type="button" id="btn-open-connected-residents" class="connect-header-action-btn" aria-label="Connected Residents" title="Connected Residents" onclick="if(window.NodeApp&&window.NodeApp.navigateTo){window.NodeApp.navigateTo('connected-residents');}">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M160-40v-80h640v80H160Zm0-800v-80h640v80H160Zm320 400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm70-80q45-56 109-88t141-32q77 0 141 32t109 88h70v-480H160v480h70Zm118 0h264q-29-20-62.5-30T480-280q-36 0-69.5 10T348-240Zm103.5-291.5Q440-543 440-560t11.5-28.5Q463-600 480-600t28.5 11.5Q520-577 520-560t-11.5 28.5Q497-520 480-520t-28.5-11.5ZM480-480Z"/></svg>
+                </button>
+            </div>
+
+            <div class="connect-stage-container">
+                <div class="connect-top-card-section">
+                    <div class="holocard-stage-wrapper">
+                        <div id="connect-holocard-container"></div>
+                    </div>
+                </div>
+
+                <div class="nearby-section-header-row">
+                    <div class="nearby-title-col">
+                        <h3 class="nearby-heading">People Nearby</h3>
+                        <p class="nearby-subtitle">Discovered via GPS &bull; Visible within 15 meters</p>
+                    </div>
+                    <span id="nearby-counter-pill" class="nearby-counter-pill">4 nearby</span>
+                </div>
+
+                <div class="nearby-cards-container">
+                    <div class="nearby-stack-stage-wrapper">
+                        <div id="nearby-react-bits-stack-box" class="nearby-react-bits-stack-box">
+                            <div id="nearby-cards-stack" class="nearby-cards-stack"></div>
+                        </div>
+                        <div id="nearby-stack-action-bar" class="nearby-stack-action-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="view-connected-residents" class="app-view">
+            <div class="settings-view-header connect-view-header">
+                <button id="btn-back-to-connect-from-connected" class="back-to-home-btn" aria-label="Back to Connect" onclick="if(window.NodeApp&&window.NodeApp.navigateTo){window.NodeApp.navigateTo('connect');}">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                    <span>Connect</span>
+                </button>
+                <div class="connect-header-title-box">
+                    <h2 class="settings-screen-title connect-centered-title">Connected Residents</h2>
+                </div>
+                <div class="connected-counter-badge-wrap">
+                    <span id="connected-counter-pill" class="nearby-counter-pill">3 connected</span>
+                </div>
+            </div>
+
+            <div id="connected-residents-stage" class="connected-residents-stage">
+                <div id="connected-inspect-wrapper" class="connected-inspect-wrapper">
+                    <div class="holocard-stage-wrapper">
+                        <div id="connected-inspect-holocard" class="connected-inspect-holocard"></div>
+                    </div>
+                </div>
+
+                <div id="connected-stack-center-box" class="connected-stack-center-box">
+                    <div class="nearby-react-bits-stack-box connected-stack-box">
+                        <div id="connected-cards-stack" class="nearby-cards-stack"></div>
+                    </div>
+
+                    <div class="nearby-stack-gesture-hint connected-gesture-hint">
+                        <span>Swipe card to browse &bull; Tap Card to View</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    
+    <div class="bottom-nav-container">
+        
+        <div id="nav-glass-surface" class="glass-surface" data-glass-surface="true">
+            <div class="glass-surface__content">
+                <nav class="bottom-nav">
+                    <ul>
+                        
+                        <li>
+                            <a href="#home" class="active" data-target="home" title="Home Community Page">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                    <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/>
+                                </svg>
+                                <span class="nav-text">Home</span>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#communities" data-target="communities" title="Communities">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor"><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"/></svg>
+                                <span class="nav-text">Communities</span>
+                            </a>
+                        </li>
+
+                        
+                        <li>
+                            <a href="#connect" data-target="connect" title="Connect">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                    <path d="M640-80v-90q-56-18-94-64t-44-106h80q8 43 40.5 71.5T700-240h120q25 0 42.5 17.5T880-180v100H640Zm120-200q-33 0-56.5-23.5T680-360q0-33 23.5-56.5T760-440q33 0 56.5 23.5T840-360q0 33-23.5 56.5T760-280ZM360-400q0-150 105-255t255-105v80q-117 0-198.5 81.5T440-400h-80Zm160 0q0-83 58.5-141.5T720-600v80q-50 0-85 35t-35 85h-80ZM80-520v-100q0-25 17.5-42.5T140-680h120q45 0 77.5-28.5T378-780h80q-6 60-44 106t-94 64v90H80Zm120-200q-33 0-56.5-23.5T120-800q0-33 23.5-56.5T200-880q33 0 56.5 23.5T280-800q0 33-23.5 56.5T200-720Z"/>
+                                </svg>
+                                <span class="nav-text">Connect</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <div id="create-invitation-modal" class="modal-overlay">
+        <div class="modal-sheet">
+            <div class="modal-grabber-handle"></div>
+            <div class="modal-sheet-header">
+                <h3>Create an Invitation</h3>
+                <button id="btn-close-create-invitation-modal" class="modal-dismiss-btn" aria-label="Close">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <p class="panel-subtext" style="margin-bottom: 1.25rem;">Invite neighbors to join you for an activity, workout, or meetup. Free to join for all residents.</p>
+
+            <form id="form-create-invitation" class="invitation-form" onsubmit="event.preventDefault();">
+                <div class="field-group">
+                    <label class="field-label" for="input-inv-title">Activity / Session Name</label>
+                    <input type="text" id="input-inv-title" class="field-input" placeholder="e.g. Evening Upper Body Workout &amp; Spotting" required maxlength="80">
+                </div>
+
+                <div class="field-row-grid">
+                    <div class="field-group">
+                        <label class="field-label" for="select-inv-location">Location</label>
+                        <select id="select-inv-location" class="field-input">
+                            <option value="Gym">Gym (East Wing, Floor 4)</option>
+                            <option value="Park">Park (Ground Level, Courtyard West)</option>
+                            <option value="Rooftop Lounge">Rooftop Lounge (North Tower, Level 28)</option>
+                            <option value="Swimming Pool">Swimming Pool (Clubhouse, Level 2)</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label class="field-label" for="input-inv-time">Scheduled Time</label>
+                        <input type="text" id="input-inv-time" class="field-input" placeholder="e.g. Today, 6:30 PM" required maxlength="40">
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field-label-row">
+                        <label class="field-label">How Many People Could Join?</label>
+                        <span id="capacity-counter-display" class="capacity-pill">4 people max</span>
+                    </div>
+                    <div class="capacity-stepper">
+                        <button type="button" id="btn-capacity-decrease" class="capacity-step-btn" aria-label="Decrease Capacity">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M19 13H5v-2h14v2z"/>
+                            </svg>
+                        </button>
+                        <input type="number" id="input-inv-capacity" class="capacity-number-input" value="4" min="1" max="20" readonly>
+                        <button type="button" id="btn-capacity-increase" class="capacity-step-btn" aria-label="Increase Capacity">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label" for="input-inv-note">Message for Neighbors</label>
+                    <textarea id="input-inv-note" class="field-textarea" rows="2" placeholder="Tell neighbors what to expect or bring..."></textarea>
+                </div>
+
+                <button type="submit" id="btn-submit-invitation" class="card-save-btn">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+                    </svg>
+                    <span>Post Community Invitation</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div id="share-modal" class="modal-overlay">
+        <div class="modal-sheet">
+            <div class="modal-grabber-handle"></div>
+            <div class="modal-sheet-header">
+                <h3>Share Resident Card</h3>
+                <button id="btn-close-share-modal" class="modal-dismiss-btn" aria-label="Close">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div style="text-align: center; margin-bottom: 1.5rem;">
+                <div style="margin: 0 auto 1.25rem auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.45rem;">
+                    <svg viewBox="0 0 24 24" width="68" height="68" fill="currentColor">
+                        <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm13-2h3v2h-3v-2zm-3 0h2v3h-2v-3zm0 3h3v2h-3v-2zm3 0h3v5h-2v-3h-1v-2zm-5 2h2v3h-2v-3zm2 2h3v1h-3v-1zm1-9h1v1h-1V8zm-1-1h1v1h-1V7zm2 1h1v1h-1V8zm-7-2h1v1H8V6zm-1 1h1v1H7V7zm2 1h1v1H9V8zm-2 7h1v1H7v-1zm1 1h1v1H8v-1zm-1 1h1v1H7v-1zm2 0h1v1H9v-1z"/>
+                    </svg>
+                    <span style="font-size: 0.65rem; font-weight: 700; color: var(--text-tertiary); letter-spacing: 0.08em; text-transform: uppercase;">QR CONTACT PASS</span>
+                </div>
+                <h4 id="share-modal-name" style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.2rem; letter-spacing: -0.025em;">Alex Rivera</h4>
+                <p id="share-modal-unit" style="font-size: 0.86rem; color: var(--system-blue); font-weight: 600; letter-spacing: -0.01em;">Block 4, #07-12</p>
+                <p id="share-modal-phone" style="font-size: 0.95rem; font-weight: 700; margin-top: 0.25rem; color: var(--text-primary);">+1 (555) 392-8192</p>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                <button id="btn-modal-copy-card" class="card-save-btn" style="justify-content: center;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+                    </svg>
+                    <span>Copy Contact Info to Clipboard</span>
+                </button>
+                <button id="btn-modal-download-vcf" class="card-share-action-btn" style="justify-content: center;">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                        <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+                    </svg>
+                    <span>Download Contact File (.vcf)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="connect-request-modal" class="modal-overlay">
+        <div class="modal-sheet incoming-request-sheet">
+            <div class="modal-grabber-handle"></div>
+            <div class="incoming-request-card">
+                <div class="incoming-avatar-wrap">
+                    <div class="incoming-avatar" id="incoming-request-avatar">EV</div>
+                    <div class="incoming-radar-pulse"></div>
+                </div>
+                <h3 id="incoming-request-name" class="incoming-person-name">Elena Vance</h3>
+                <div class="incoming-distance-text">
+                    <span id="incoming-request-distance">3m away &bull; Courtyard Garden</span>
+                </div>
+                <p class="incoming-request-subtext">Wants to connect and exchange resident cards via NameDrop.</p>
+                
+                <div class="incoming-actions-row">
+                    <button type="button" id="btn-decline-connect" class="btn-incoming-decline">Decline</button>
+                    <button type="button" id="btn-accept-connect" class="btn-incoming-accept">Accept &amp; Connect</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="airdrop-transfer-overlay" class="airdrop-overlay">
+        <div class="airdrop-liquid-ripple-container">
+            <div class="airdrop-liquid-glow"></div>
+            <div class="airdrop-liquid-ring ring-1"></div>
+            <div class="airdrop-liquid-ring ring-2"></div>
+            <div class="airdrop-liquid-ring ring-3"></div>
+            <div class="airdrop-liquid-ring ring-4"></div>
+        </div>
+
+        <div class="airdrop-stage-center">
+            <div id="airdrop-user-card-flyer" class="airdrop-card-flyer airdrop-user-flyer">
+                <span class="airdrop-flyer-badge">Your Resident Pass</span>
+                <div id="airdrop-user-card-content" class="airdrop-card-display"></div>
+            </div>
+
+            <div id="airdrop-peer-card-flyer" class="airdrop-card-flyer airdrop-peer-flyer">
+                <span class="airdrop-flyer-badge" id="airdrop-peer-flyer-badge">Connected Resident Pass</span>
+                <div id="airdrop-peer-card-holocard" class="airdrop-holocard-box"></div>
+                <div class="airdrop-peer-actions-box">
+                    <div class="airdrop-connected-pill">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+                        </svg>
+                        <span id="airdrop-connected-peer-text">Connected</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="global-toast" class="toast-notice"></div>
+
+    <script src="js/GlassSurface.js?v=9.0"></script>
+    <script src="js/HoloCard.js?v=9.0"></script>
+    <script src="js/stack.js?v=9.0"></script>
+    <script src="js/Carousel.js?v=9.0"></script>
+    <script src="js/theme.js?v=9.0"></script>
+    <script src="js/profile.js?v=9.0"></script>
+    <script src="js/connect.js?v=9.0"></script>
+    <script src="js/notifications.js?v=9.0"></script>
+    <script src="js/ScrollStack.js?v=9.0"></script>
+    <script src="js/communities.js?v=9.0"></script>
+    <script src="js/app.js?v=9.0"></script>
+    <script src="js/pwa.js?v=9.0"></script>
+</body>
+</html>

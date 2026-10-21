@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+    <style>
+        path, circle { stroke: #1f1f1f; }
+        @media (prefers-color-scheme: dark) {
+            path, circle { stroke: #f5f5f7; }
+        }
+    </style>
+    <circle cx="280" cy="-680" r="120" fill="none" stroke-width="80" stroke-linecap="round"/>
+    <circle cx="680" cy="-280" r="120" fill="none" stroke-width="80" stroke-linecap="round"/>
+    <path d="M 210,-542 L 134,-415 C 105,-365 130,-285 190,-280 C 225,-277 252,-288 270,-300 L 690,-660 C 708,-672 735,-683 770,-680 C 830,-675 855,-595 826,-545 L 750,-418" fill="none" stroke-width="80" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
