@@ -70,6 +70,15 @@ Our brainstorming focused on residents who live close together but rarely commun
 
 Neighbours are given a platform to widen their social comfort zone by joining or beginning to explore social activities participated other strangers before nighbours. This encourages them to loosen up and enjoy their living experience together with faces they see everyday exploring better connectivity and companionships. At the same time it also allows nighbours to help each other in need such as whenever any neighbour runs into a problem requiring professional help, they can always contact their neighbours with the professional skills by reviewing their **Connect** list.Additionally , people can choose the right time and day to enjoy the shared facilities together with the amount of people they feel comfortable or with few people if they don't feel like it.
 
+### 2.3 Project Node vs Existing Solutions
+
+|Existing Tool|Functionality|Weakness|Project Node Solutions|
+|---|---|---|---|
+|1.OneRoof|Works like Discord but for neighbors|First time users need to identify their specific interest related chatrooms before beginning communication|Allows users to find basic interests before connecting with a neighbour and can explore matching interests after sharing digital contact cards|
+|2. NextDoor|Nextdoor is a hyper-local social networking platform that connects people who live near each other, along with local businesses, public agencies, and news providers|It is too crowded and noisy as there can be multiple posts, arguments and gossip. Also the app relies on ads and clutters phones with notifications as it is heavily monetized.|Provides clean and only necessary notifications tailored for each user. Communities are optional for users to join, and they can discover social activities and neighbours without joining one as well.|
+|3. iNeighbour|Is a cloud-based smart community and residential property management system developed by TimeTec Cloud Sdn. Bhd., a subsidiary of TimeTec Group in Malaysia|Events are organized by admins to inform residents rather than allowing them to organize or connect with each other. Mainly built as a management system rather than prioritizing neighbours connection|Prioritizes neighbours connection especially one-on-one before joining communities. Also, communities can have certain limitations, and are mostly closed communities which allows new users to get comfortable before joining larger communities.Prioritizes neighbours connection especially one-on-one before joining communities. Also, communities can have certain limitations, and are mostly closed communities which allows new users to get comfortable before joining larger communities.|
+
+
 ## 3. Ideation Process
 
 ### 3.1 How the idea came to be a prototype
