@@ -3,19 +3,20 @@
 ---
 
 **Challenge Selected:** Theme 1 -- PEOPLE
-**How might we enable every resident to live healthier,safer,more connected and more fullfilling lives?**
+
+**How might we enable every resident to live healthier, safer, connected and more fulfilling lives?**
 
 **Team :**
 - Stephen Sii Zhong Chee
 - Sayed Salman Fariz bin Sayed Sultan Ibrahim
 - Meghan A/L Latchumanan
 
-**Video Presentation:**
-**Pitch Deck:**
-**Live Prototype:**
+**Video Presentation:**\
+**Pitch Deck:**\
+**Live Prototype:**\
 **Supporting Documents:**
 
-*Access note for evaluators: To test the live prototype do download or add the progressive web app optimized for mobile phones*
+*Access note for evaluators: To test the live prototype do download or add the progressive web app to your mobile phones as they are optimized for better user experience in mobile phones*
 
 ---
 
