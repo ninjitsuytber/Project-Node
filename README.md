@@ -15,7 +15,7 @@
 **Live Prototype:**
 **Supporting Documents:**
 
-*Access note for evaluators: To test the live prototypr do download or add the progressive web app optimized for mobile phones*
+*Access note for evaluators: To test the live prototype do download or add the progressive web app optimized for mobile phones*
 
 ---
 
