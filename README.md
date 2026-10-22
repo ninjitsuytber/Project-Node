@@ -101,4 +101,4 @@ r/Bolehland
 
 - Housekeeping needed from around the neighbourhood if possible.I am a very busy guy and foremost, a guy. so, while my house is not dirty, it is messy.Once / twice a week kinda housekeeping would help me alot.Only reason i dont go through with this is because.logistic cost. there are fees for the housekeepers / cleaners to come to your door so if your location is very far, this cost compounds
 
-Trustworthiness and guarantees. I don't know the company, i don't know their staff. i have cctv at home but if they do decide to rob me, damage is still there and i dont know how guarantees work in these kind of situation
+- Trustworthiness and guarantees. I don't know the company, i don't know their staff. i have cctv at home but if they do decide to rob me, damage is still there and i dont know how guarantees work in these kind of situation
