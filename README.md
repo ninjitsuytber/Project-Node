@@ -10,8 +10,8 @@
 
 **Team :**
 - Stephen Sii Zhong Chee    [LinkedIn](https://github.com/ninjitsuytber)
-- Sayed Salman Fariz bin Sayed Sultan Ibrahim [LinkedIn](https://github.com/Rezastra)
-- Meghan A/L Latchumanan [LinkedIn](https://github.com/Meghan1411)
+- Sayed Salman Fariz bin Sayed Sultan Ibrahim   [LinkedIn](https://github.com/Rezastra)
+- Meghan A/L Latchumanan    [LinkedIn](https://github.com/Meghan1411)
 
 **Video Presentation:** [Project Node](https://www.youtube.com/watch?v=goq9AenJPo4)\
 **Pitch Deck:**\
