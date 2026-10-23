@@ -6,7 +6,7 @@
 
 ---
 
-**Challenge Selected:** Theme 1 -- PEOPLE
+**Challenge Selected:** _Theme 1 - PEOPLE_
 
 **How might we enable every resident to live healthier, safer, connected and more fulfilling lives?**
 
