@@ -1,4 +1,5 @@
 # Project-Node by Touch Grass Denialists
+### Turn neighbors into familiar faces
 
 <img width="800" height="450" alt="Project Node" src="https://github.com/user-attachments/assets/418d24cf-712f-4897-ae8b-7b79c198a2a4" />
 
