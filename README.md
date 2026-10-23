@@ -20,7 +20,7 @@
 **Live Prototype:** [Project Node Live Prototype](https://protonode.pages.dev)\
 **Supporting Documents:** [Project Node Supporting Document](https://docs.google.com/document/d/1zOsqz_Jp1z4ArEDTq1I97XzAMfAu1R0GBE0TZCGPl2g/edit?usp=sharing)
 
-*Access note for evaluators: To test the live prototype do download or add the progressive web app to your mobile phones as they are optimized for better user experience in mobile phones*
+*Access note for evaluators: To test the live prototype do **DOWNLOAD** or add the progressive web app to your mobile phones as they are optimized for **better user experience** in mobile phones*
 
 ---
 
