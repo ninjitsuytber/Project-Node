@@ -16,7 +16,7 @@
 - Meghan A/L Latchumanan    [LinkedIn](https://github.com/Meghan1411)
 
 **Video Presentation:** [Project Node](https://www.youtube.com/watch?v=goq9AenJPo4)\
-**Pitch Deck:**\
+**Pitch Deck:** [Project Node Presentation Slides](https://drive.google.com/file/d/1Dyl4YuCz32flXWC6B1R-T7k8LCtOhLxM/view)\
 **Live Prototype:** [Project Node Live Prototype](https://protonode.pages.dev)\
 **Supporting Documents:** [Project Node Supporting Document](https://docs.google.com/document/d/1zOsqz_Jp1z4ArEDTq1I97XzAMfAu1R0GBE0TZCGPl2g/edit?usp=sharing)
 
