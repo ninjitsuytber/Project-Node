@@ -1,5 +1,7 @@
 # Project-Node by Touch Grass Denialists
 
+<img width="800" height="450" alt="Project Node" src="https://github.com/user-attachments/assets/418d24cf-712f-4897-ae8b-7b79c198a2a4" />
+
 [![Download Project Nodes APK](https://img.shields.io/badge/Download-Project_Nodes.apk-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/12dH1K3hbhCHxfpK6HktGf8w5-u2vXvCi/view?usp=sharing)
 
 ---
